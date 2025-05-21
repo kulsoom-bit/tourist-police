@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* NAVBAR */
+  #nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #fff;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    text-align: center;
+  }
+  
+  .logo img {
+    height: 78px;
+    width: 84px;
+  }
+  
+  
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    padding: 10px;
+    transition: 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    background-color: #5B9FD8;
+    color: white;
+    border-radius: 4px;
+  }
+  
+  .btn-contact {
+    background-color: #5B9FD8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  /* HERO SECTION */
+  .hero-image {
+    width: 100%;
+    max-height: 555px;
+    overflow: hidden;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+
+  .left {
+    max-width: 300px;
+    flex: 1;
+  }
+
+  .left h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  .left p {
+    color: #666;
+  }
+
+  .right {
+    flex: 2;
+  }
+
+  .right h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .cards {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 200px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  /* HERO SECTION 2 */
+  .hero-image2 {
+    width: 100%;
+    max-width: 1512px;
+    height: auto;
+    margin: 50px auto; /* adds spacing from previous content */
+    overflow: hidden;
+    position: relative; /* keeps it in flow but allows z-index/absolute children if needed */
+  }
+  
+  .hero-image2 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+  
+  
+  
+  h3 {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px 50px;
+    flex-wrap: wrap;
+    
+    
+  }
+
+  .contain {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .location {
+    width: 180px;
+  }
+
+  .location img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .caption {
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: capitalize;
+  }
+ 
+
+  
+  
+
+  
+  /* FOOTER */
+  footer {
+    background-color: #00162F;
+    color: white;
+    padding: 40px 50px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 60px;
+  }
+  
+  .logo-section {
+    flex: 0 0 auto;
+    text-align: center;
+  }
+  
+  .logo-section img {
+    height: 80px;
+  }
+  
+  .logo-section .logo-text {
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .links-section {
+    flex: 1;
+    min-width: 150px;
+  }
+  
+  .links-section h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .links-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .links-section ul li {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .links-section ul li:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom hr {
+    border: 1px solid white;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .footer-bottom p {
+    font-size: 16px;
+  }
+  
+  /* RESPONSIVE DESIGN */
+  @media (max-width: 1024px) {
+    .services-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #nav {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .top-bar {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 20px;
+    }
+  
+    .services-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .footer-content {
+      flex-direction: column;
+      gap: 40px;
+      text-align: center;
+      align-items: center;
+    }
+  }
+  
